@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Fredoka:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+background: url("img/cuking.JFIF") center center/cover no-repeat fixed;
+font-family: 'Fredoka', sans-serif;
+color: #444;
+}
+
+/* Overlay agar tulisan lebih jelas */
+
+body::before {
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(255, 255, 255, .35);
+z-index: -1;
+}
+
+/* ================= HEADER ================= */
+
+header {
+width: 100%;
+text-align: center;
+padding: 30px 20px;
+color: #1565c0;
+}
+
+header .judul {
+font-family: 'Cherry Bomb One', cursive;
+font-size: 40px;
+margin-bottom: 10px;
+}
+
+header .deskripsi {
+font-size: 18px;
+color: #1976d2;
+}
+
+/* ================= WRAPPER ================= */
+
+.wrap {
+width: 1300px;
+margin: 30px auto;
+}
+
+/* ================= MENU ================= */
+
+nav.menu ul {
+list-style: none;
+overflow: hidden;
+background: rgba(21, 101, 192, .95);
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+nav.menu ul li {
+float: left;
+}
+
+nav.menu ul li a {
+display: block;
+padding: 20px 30px;
+text-decoration: none;
+color: white;
+font-weight: bold;
+transition: .3s;
+font-size: 16px;
+}
+
+nav.menu ul li a:hover {
+background: #42a5f5;
+}
+
+/* ================= BLOG ================= */
+
+.blog {
+float: left;
+}
+
+/* ================= KONTEN ================= */
+
+.conteudo {
+width: 950px;
+padding: 30px;
+margin: 25px auto;
+background: rgba(255, 255, 255, .95);
+border-radius: 25px;
+box-shadow: 0 15px 35px rgba(0, 0, 0, .18);
+}
+
+.conteudo h1 {
+color: #1565c0;
+font-family: 'Cherry Bomb One', cursive;
+margin-bottom: 15px;
+font-size: 32px;
+}
+
+.conteudo h2 {
+color: #2196f3;
+margin-bottom: 10px;
+}
+
+.conteudo p {
+line-height: 1.8;
+color: #555;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+float: right;
+width: 280px;
+}
+
+.sidebar .widget {
+background: rgba(255, 255, 255, .95);
+border-radius: 25px;
+padding: 25px;
+margin: 25px auto;
+box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+transition: .3s;
+}
+
+.sidebar .widget:hover {
+transform: translateY(-5px);
+}
+
+.sidebar .widget h2 {
+font-family: 'Cherry Bomb One', cursive;
+color: #1565c0;
+margin-bottom: 15px;
+}
+
+.sidebar .widget p,
+.sidebar .widget li {
+color: #666;
+line-height: 1.8;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+display: inline-block;
+background: #1565c0;
+color: white;
+padding: 12px 25px;
+border-radius: 15px;
+text-decoration: none;
+transition: .3s;
+font-weight: bold;
+}
+
+.btn:hover {
+background: #42a5f5;
+transform: scale(1.05);
+}
+
+/* ================= TABLE ================= */
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 15px;
+}
+
+table th {
+background: #1565c0;
+color: white;
+padding: 12px;
+}
+
+table td {
+background: #f3f8ff;
+padding: 12px;
+border-bottom: 1px solid #cfe3ff;
+}
+
+table tr:hover td {
+background: #e3f2fd;
+}
+
+/* ================= FORM ================= */
+
+input,
+select,
+textarea {
+width: 100%;
+padding: 12px;
+margin: 8px 0;
+border: none;
+border-radius: 15px;
+background: #f3f8ff;
+font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+outline: none;
+border: 2px solid #42a5f5;
+background: white;
+}
+
+button {
+background: #1565c0;
+color: white;
+border: none;
+padding: 12px 20px;
+border-radius: 15px;
+cursor: pointer;
+font-weight: bold;
+transition: .3s;
+}
+
+button:hover {
+background: #0d47a1;
+transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+text-align: center;
+padding: 25px;
+margin-top: 30px;
+color: #1565c0;
+font-family: 'Cherry Bomb One', cursive;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width:1300px) {
+.wrap {
+width: 95%;
+}
+
+
+.blog {
+    width: 100%;
+}
+
+.sidebar {
+    width: 100%;
+    float: none;
+}
+
+.conteudo {
+    width: 100%;
+}
+
+nav.menu ul li {
+    float: none;
+}
+
+nav.menu ul li a {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+
+}
